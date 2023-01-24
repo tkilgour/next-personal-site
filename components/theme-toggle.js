@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-  const [activeTheme, setActiveTheme] = useState('light');
+  const [activeTheme, setActiveTheme] = useState(document.body.dataset.theme);
   const inactiveTheme = activeTheme === 'light' ? 'dark' : 'light'
 
-  useEffect(() => {
-    const savedTheme = window.localStorage.getItem('theme')
-    console.log(savedTheme)
-    savedTheme && setActiveTheme(savedTheme)
-  }, [])
-  
   useEffect(() => {
     document.body.dataset.theme = activeTheme
     window.localStorage.setItem('theme', activeTheme)

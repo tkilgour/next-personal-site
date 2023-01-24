@@ -1,7 +1,11 @@
 import NavBar from "./nav-bar";
-import ThemeToggle from "./theme-toggle";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+
+const ThemeToggle = dynamic(() => import("./theme-toggle"), {
+  ssr: false
+})
 
 export default function Header() {
   const router = useRouter();
