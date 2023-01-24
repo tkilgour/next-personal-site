@@ -4,8 +4,6 @@ const ThemeToggle = () => {
   const [activeTheme, setActiveTheme] = useState('light');
   const inactiveTheme = activeTheme === 'light' ? 'dark' : 'light'
 
-  // localStorage.setItem("theme", theme);
-  // document.getElementById("app").setAttribute("data-theme", theme);
   useEffect(() => {
     const savedTheme = window.localStorage.getItem('theme')
     console.log(savedTheme)
@@ -16,20 +14,6 @@ const ThemeToggle = () => {
     document.body.dataset.theme = activeTheme
     window.localStorage.setItem('theme', activeTheme)
   }, [activeTheme])
-
-  function getPreferedColorScheme() {
-    return window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  };
-
-  // if (typeof window !== "undefined") {
-  //   setTheme(localStorage.getItem("theme"));
-  //   if (!theme) {
-  //     setTheme(getPreferedColorScheme());
-  //   }
-  // }
 
   return (
     <>
