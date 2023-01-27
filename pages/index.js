@@ -1,22 +1,40 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import getPosts from "../helpers/getPosts";
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
         <title>Home – Thomas Kilgour</title>
       </Head>
 
-      <p className="mb-4">Hello!</p>
-      <p className="mb-4">
-        I'm Thomas, a frontend web developer. I build interactive web
-        applications and often use 
-        <a href="https://vuejs.org">Vue.js</a> to accomplish the job. I like to
-        focus on accessibility and usability, which often means
-        <em>less</em> is <strong>more</strong> – so I'll just stop there.
-      </p>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.slug} className="mb-32">
+            <h2 className="mb-2">
+              <Link
+                className="text-2xl outline-none underline-offset-8 hover-color-secondary hover:underline focus:underline"
+                href={post.slug}
+              >
+                {post.data.title}
+              </Link>
+            </h2>
+            <div className="text-sm mb-8">{post.data.date}</div>
+            <p className="text-gray-500 dark:text-gray-400">{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
+}
+
+export const getStaticProps = () => {
+  const posts = getPosts()
+
+  return {
+    props: {
+      posts
+    }
+  }
 }

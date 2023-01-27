@@ -35,6 +35,7 @@ body[data-theme="dark"] {
   color: var(--text-color-secondary);
 }
 
+/* TODO: revisit this implementation and try to make it more Tailwind-y */
 .hover-color-secondary:hover,
 .hover-color-secondary:focus {
   color: var(--text-color-secondary);

@@ -1,9 +1,9 @@
-import NavBar from "./nav-bar";
+import NavBar from "./NavBar";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
-const ThemeToggle = dynamic(() => import("./theme-toggle"), {
+const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
   ssr: false
 })
 
@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <header className="py-4 sm:py-8 mb-4 relative">
-        <h1 className=" mb-6">
+        <h1 className="mb-6">
           <div className="text-4xl block sm:inline">
             {router.pathname === "/" ? (
               <span>Thomas Kilgour</span>

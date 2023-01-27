@@ -7,5 +7,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
+  darkMode: ["class", '[data-theme="dark"]'], // handle dark mode based on class switching instead of prefers-color-scheme
 };
