@@ -52,7 +52,7 @@ export default function NavItem({ href, download, children }) {
 
   return (
     <>
-      <li className="mr-6 p-1">{link}</li>
+      <li className="p-1">{link}</li>
     </>
   );
 }
