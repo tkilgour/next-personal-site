@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Projects({ projects }) {
   return (
@@ -13,20 +14,17 @@ export default function Projects({ projects }) {
             key={project.id}
             className="px-4 py-6 border rounded-lg shadow-md"
           >
+            {/* {project.openGraphImageUrl && <Image src={project.openGraphImageUrl} alt="" width={200} height={200} />} */}
+            {project.openGraphImageUrl && <img className="mb-4" src={project.openGraphImageUrl}/>}
             <div className="pb-4 border-b">
-              <h2 className="text-xl mb-2">
-                <a href={project.websiteUrl || project.githubUrl}>
-                  {project.name}
-                </a>
-              </h2>
-
-              <div className="flex items-center">
+              <div className="flex gap-3 items-center">
+                <h2 className="text-xl">
+                  <a href={project.websiteUrl || project.githubUrl}>
+                    {project.name}
+                  </a>
+                </h2>
                 {project.websiteUrl && (
-                  <a
-                    href={project.websiteUrl}
-                    className="mr-2"
-                    aria-label="Website"
-                  >
+                  <a href={project.websiteUrl} aria-label="Website">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -100,6 +98,7 @@ export const getStaticProps = async () => {
               githubUrl: url
               websiteUrl: homepageUrl
               description
+              openGraphImageUrl
               repositoryTopics(first: 10) {
                 edges {
                   node {
