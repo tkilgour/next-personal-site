@@ -39,6 +39,13 @@ const photos = [
   //   camera: "iPhone XR",
   // },
   {
+    src: "v1678938296/16E8211F-87CF-4BFE-82AD-3006F4AB14F1_1_105_c.jpg",
+    alt: "My wife and my dad standing on the frozen tundra of Georgian Bay, ON, looking away from the camera.",
+    date: "Feb 18, 2018",
+    location: "Georgian Bay, ON",
+    camera: "iPhone 6s",
+  },
+  {
     src: "v1678938296/6A57BA51-BBFF-4FB1-8523-9A14C51D8088_1_105_c.jpg",
     alt: "Red train lights over snowy tracks next to Wallace St Bridge, Toronto, ON.",
     date: "March 1, 2016",
@@ -65,8 +72,8 @@ export default function Photography() {
 
       <div className="flex flex-col gap-12">
         {
-          photos.map((photoItem) => (
-            <PhotoItem key={photoItem.src} photoItem={photoItem} />
+          photos.map((photoItem, index) => (
+            <PhotoItem key={photoItem.src} photoItem={photoItem} priority={index === 0} />
           ))
         }
       </div>

@@ -41,9 +41,9 @@ export default function Header() {
               />
             </svg>
             <div className="flex flex-col sm:flex-row items-baseline">
-              <h1 className="text-3xl sm:text-5xl block sm:inline">
+              <p className="text-3xl sm:text-5xl block sm:inline">
                 Thomas Kilgour
-              </h1>
+              </p>
               <div></div>
               <span className="text-lg font-mono sm:pl-2 text-color-secondary">
                 <span className="hidden sm:inline">–</span> Web Developer

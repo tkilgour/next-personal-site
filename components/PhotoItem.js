@@ -1,6 +1,6 @@
 import { CldImage } from "next-cloudinary";
 
-export default function PhotoItem({ photoItem }) {
+export default function PhotoItem({ photoItem, priority }) {
   return (
     <div>
       <div className={photoItem.pano ? "" : "md:mx-40 lg:mx-48"}>
@@ -9,6 +9,7 @@ export default function PhotoItem({ photoItem }) {
           width={1152}
           height={1536}
           alt={photoItem.alt}
+          priority={priority}
         />
         <div
           className={`${
