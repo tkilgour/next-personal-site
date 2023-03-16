@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 export default function Projects({ projects }) {
-  console.log(projects[0]);
   return (
     <div>
       <Head>
