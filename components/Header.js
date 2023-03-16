@@ -4,29 +4,65 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
 const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
-  ssr: false
-})
+  ssr: false,
+});
 
 export default function Header() {
-  const router = useRouter();
   return (
     <>
       <header className="py-4 sm:py-8 mb-4 relative">
-        <h1 className="mb-6">
-          <div className="text-4xl block sm:inline">
-            {router.pathname === "/" ? (
-              <span>Thomas Kilgour</span>
-            ) : (
-              <Link href="/">Thomas Kilgour</Link>
-            )}
+        <HeaderLink>
+          <div className="flex items-center sm:items-baseline mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 784 466"
+              className="w-16 sm:w-24 mr-6 text-color-secondary"
+            >
+              <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="M236 466h156V74H236Z"
+              />
+              <path fill="currentColor" fillRule="evenodd" d="M0 466h156V74H0Z" />
+              <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="M471 466h216L471 250Z"
+              />
+              <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="m551 233 233 233V0Z"
+              />
+              <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="M471 0v216L687 0Z"
+              />
+            </svg>
+            <div className="flex flex-col sm:flex-row items-baseline">
+              <h1 className="text-3xl sm:text-5xl block sm:inline">
+                Thomas Kilgour
+              </h1>
+              <div></div>
+              <span className="text-lg font-mono sm:pl-2 text-color-secondary">
+                <span className="hidden sm:inline">–</span> Web Developer
+              </span>
+            </div>
           </div>
-          <span className="text-lg font-mono pl-2 text-color-secondary">
-            <span className="hidden sm:inline">–</span> Web Developer
-          </span>
-        </h1>
+        </HeaderLink>
         <NavBar />
         <ThemeToggle />
       </header>
     </>
+  );
+}
+
+function HeaderLink({ children }) {
+  const router = useRouter();
+  return router.pathname === "/" ? (
+    children
+  ) : (
+    <Link href="/">{children}</Link>
   );
 }
