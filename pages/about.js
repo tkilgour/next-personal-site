@@ -48,10 +48,10 @@ export default function About() {
 
         <div>
           <p className="mb-4">
-            Hello! <em>I'm Thomas.</em>
+            Hello! <em>I&rsquo;m Thomas.</em>
           </p>
           <p>
-            I'm a professional web developer with over six years of experience.
+            I&rsquo;m a professional web developer with over six years of experience.
             I work primarily with front end tech, but like to tinker with all
             sorts of things. I care a lot about the end user experience, and
             firmly believe that focusing on accessibile, performant applications
