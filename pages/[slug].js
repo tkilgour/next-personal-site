@@ -6,7 +6,7 @@ import getPost from "../helpers/getPost";
 function Post({ data, content }) {
   return (
     <article>
-      <h1 className="mb-4 text-4xl leading-normal">{data.title}</h1>
+      <h1 className="mb-4 text-3xl sm:text-4xl leading-tight">{data.title}</h1>
       <div className="mb-8">{data.date}</div>
       <div className="prose dark:prose-invert mt-12">
         <MDXRemote {...content} />

@@ -46,6 +46,7 @@ export default function About() {
               src="v1678991899/IMG_1433.jpg"
               rawTransformations={["c_fill,g_face,h_400,w_400"]}
               alt="A picture of me, Thomas Kilgour"
+              priority={true}
               className="border w-48"
             />
           )}
@@ -55,13 +56,16 @@ export default function About() {
           <p className="mb-4">
             Hello! <em>I&rsquo;m Thomas.</em>
           </p>
-          <p>
+          <p className="mb-4">
             I&rsquo;m a professional web developer with over six years of
             experience. I work primarily with front end tech, but like to tinker
             with all sorts of things. I care a lot about the end user
             experience, and firmly believe that focusing on accessibile,
             performant applications is the best way to create a better
-            experience for everyone.
+            experience for everyone!
+          </p>
+          <p>
+            When I&rsquo;m not sitting at a desk, you&rsquo;ll likely find me outside with my kids, biking around and exploring new places.
           </p>
         </div>
       </div>
