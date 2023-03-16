@@ -3,9 +3,9 @@ import PhotoItem from "../components/PhotoItem";
 
 const photos = [
   {
-    src: "v1678938298/B540BA25-7103-4AC5-B6F0-6710B95D9C13_1_201_a.jpg",
-    alt: "My son, Max, staring seriously through spindles on a bridge.",
-    date: "Dec 13, 2021",
+    src: "v1678938297/9251974A-D9FB-4651-BC6A-51CFD756F38A_1_105_c.jpg",
+    alt: "",
+    date: "Jan 7, 2023",
     location: "Guelph, ON",
     camera: "iPhone 13 Pro",
   },
@@ -17,19 +17,19 @@ const photos = [
     camera: "iPhone 13 Pro",
   },
   {
+    src: "v1678938298/B540BA25-7103-4AC5-B6F0-6710B95D9C13_1_201_a.jpg",
+    alt: "My son, Max, staring seriously through spindles on a bridge.",
+    date: "Dec 13, 2021",
+    location: "Guelph, ON",
+    camera: "iPhone 13 Pro",
+  },
+  {
     src: "v1678938297/ED93CCA5-880B-4D68-82FA-473F924BD19C_1_102_o.jpg",
     alt: "",
     date: "Dec 10, 2019",
     location: "Taranaki, New Zealand",
     camera: "iPhone XR",
     pano: true,
-  },
-  {
-    src: "v1678938297/9251974A-D9FB-4651-BC6A-51CFD756F38A_1_105_c.jpg",
-    alt: "",
-    date: "Jan 7, 2023",
-    location: "Guelph, ON",
-    camera: "iPhone 13 Pro",
   },
   {
     src: "v1678938296/0BEE8F3D-257E-40D7-9D6C-38BACFC66304_1_102_o.jpg",
@@ -63,7 +63,7 @@ export default function Photography() {
         <meta name="description" content="Some photos I've taken." />
       </Head>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-12">
         {
           photos.map((photoItem) => (
             <PhotoItem key={photoItem.src} photoItem={photoItem} />
