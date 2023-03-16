@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 body {
   --bg-color-primary: #fff;
   --bg-color-secondary: #c8daf0;
