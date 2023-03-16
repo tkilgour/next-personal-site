@@ -24,7 +24,7 @@ export default function About() {
 
       <div className="flex flex-col sm:flex-row items-start gap-6">
         <button
-          className="flex-shrink-0 group hover:-rotate-12 focus:-rotate-12 hover:-translate-x-6 focus:-translate-x-6 transition-transform ease-in-out rounded-full overflow-hidden outline-offset-4 outline-red-400"
+          className="flex-shrink-0 group hover:-rotate-12 focus:-rotate-12 hover:-translate-x-6 focus:-translate-x-6 transition-transform ease-in-out rounded-full overflow-hidden ring ring-offset-4 ring-red-400 outline-none focus:ring-blue-400"
           onClick={handlePhotoClick}
           ref={imageRef}
         >
@@ -32,7 +32,7 @@ export default function About() {
             width={200}
             height={200}
             src="v1678991899/IMG_1433.jpg"
-            rawTransformations={["c_fill,g_face,r_max,h_200,w_200"]}
+            rawTransformations={["c_fill,g_face,h_200,w_200"]}
             alt="A picture of me, Thomas Kilgour"
             className="group-hover:hidden group-focus:hidden border"
           />
@@ -40,7 +40,7 @@ export default function About() {
             width={200}
             height={200}
             src="v1678993416/B6E03D97-FBBE-40ED-93FA-DB95E3450A8A_1_201_a.heic"
-            rawTransformations={["c_fill,g_face,r_max,h_200,w_200"]}
+            rawTransformations={["c_fill,g_face,h_200,w_200"]}
             alt="Ouch! Don't poke me!"
             className="hidden group-hover:block group-focus:block"
           />
