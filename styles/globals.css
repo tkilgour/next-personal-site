@@ -4,7 +4,7 @@
 
 body {
   --bg-color-primary: #fff;
-  --bg-color-secondary: #ebf4ff;
+  --bg-color-secondary: #c8daf0;
   --text-color-primary: #000;
   --text-color-secondary: #2d78be;
   --focus-color-tertiary: #c53030;
@@ -12,7 +12,7 @@ body {
 
 body[data-theme="dark"] {
   --bg-color-primary: #2d3748;
-  --bg-color-secondary: #c53030;
+  --bg-color-secondary: #a13f3f;
   --text-color-primary: #e2e8f0;
   --focus-color-tertiary: #63b3ed;
   --text-color-secondary: #feb2b2;
