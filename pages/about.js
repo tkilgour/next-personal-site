@@ -6,7 +6,6 @@ export default function Home() {
       <Head>
         <title>Thomas Kilgour</title>
         <meta name="description" content="It's me." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
