@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Thomas Kilgour | RSS Feed</title>
+        <link>localhost:3000</link>
+        <description>RSS Feed for Thomas Kilgour's blog</description>
+        <lastBuildDate>Tue, 21 Mar 2023 20:51:55 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Thomas Kilgour | RSS Feed</title>
+            <url>localhost:3000/logo.png</url>
+            <link>localhost:3000</link>
+        </image>
+        <copyright>All rights reserved 2023, Ibas</copyright>
+        <item>
+            <title><![CDATA[Controlling my Airpods from the comfort of my keyboard]]></title>
+            <link>localhost:3000/blog/airpods</link>
+            <guid>localhost:3000/blog/airpods</guid>
+            <pubDate>Thu, 26 Jan 2023 05:00:00 GMT</pubDate>
+            <description><![CDATA[How I set up a keyboard macro on my Keychron V6 that switches between noise cancellation and transparency modes.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Setting Up A Gridsome Project With Tailwind CSS]]></title>
+            <link>localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind</link>
+            <guid>localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind</guid>
+            <pubDate>Fri, 29 Mar 2019 04:00:00 GMT</pubDate>
+            <description><![CDATA[Setting up your Gridsome project with Tailwind CSS is extremely simple, thanks to gridsome-plugin-tailwindcss.]]></description>
+        </item>
+    </channel>
+</rss>
