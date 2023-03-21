@@ -51,8 +51,8 @@ export default function Header() {
             </div>
           </div>
         </HeaderLink>
-        <NavBar />
         <ThemeToggle />
+        <NavBar />
       </header>
     </>
   );

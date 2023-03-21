@@ -15,7 +15,7 @@ const getPosts = () => {
       slug,
       data,
     };
-  });
+  }).filter(post => post.data.published);
 
   return allPostsData;
 };
