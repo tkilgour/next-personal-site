@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import generateRssFeed from "../helpers/generateRssFeed";
+import generateSSFeed from "../helpers/generateSSFeed";
 import getPosts from "../helpers/getPosts";
 
 export default function Home({ posts }) {
@@ -40,7 +40,7 @@ export default function Home({ posts }) {
 }
 
 export const getStaticProps = () => {
-  generateRssFeed();
+  generateSSFeed();
   const posts = getPosts();
 
   return {
