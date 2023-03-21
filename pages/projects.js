@@ -14,8 +14,9 @@ export default function Projects({ projects }) {
             key={project.id}
             className="px-4 py-6 border rounded-lg shadow-md"
           >
-            {/* {project.openGraphImageUrl && <Image src={project.openGraphImageUrl} alt="" width={200} height={200} />} */}
-            {project.openGraphImageUrl && <img className="mb-4" src={project.openGraphImageUrl}/>}
+            <a href={project.websiteUrl || project.githubUrl}>
+              <Image alt="" width="800" height="600" className="mb-4" src={project.openGraphImageUrl}/>
+            </a>
             <div className="pb-4 border-b">
               <div className="flex gap-3 items-center">
                 <h2 className="text-xl">

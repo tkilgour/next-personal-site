@@ -19,6 +19,22 @@ const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   // Optionally, add any other Next.js config below
   reactStrictMode: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "repository-images.githubusercontent.com",
+        port: "",
+        // pathname: "/account123/**",
+      },
+      {
+        protocol: "https",
+        hostname: "opengraph.githubassets.com",
+        port: "",
+        // pathname: "/account123/**",
+      },
+    ],
+  },
 };
 
 // Merge MDX config with Next.js config
