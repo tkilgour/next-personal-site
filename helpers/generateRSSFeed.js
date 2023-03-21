@@ -2,7 +2,7 @@ import fs from "fs";
 import { Feed } from "feed";
 import getPosts from "./getPosts";
 
-export default async function generateRssFeed() {
+export default async function generateRSSFeed() {
   const allPosts = await getPosts();
   const site_url = "localhost:3000";
 
