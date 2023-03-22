@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote";
 import getPost from "../helpers/getPost";
 
 function Post({ data, content }) {
+  console.log({ content })
   return (
     <article>
       <h1 className="mb-4 text-3xl sm:text-4xl leading-tight">{data.title}</h1>
