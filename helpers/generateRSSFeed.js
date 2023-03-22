@@ -26,8 +26,8 @@ export default async function generateRSSFeed() {
   allPosts.forEach((post) => {
     feed.addItem({
       title: post.data.title,
-      id: `${site_url}/blog/${post.slug}`,
-      link: `${site_url}/blog/${post.slug}`,
+      id: `${site_url}/${post.slug}`,
+      link: `${site_url}/${post.slug}`,
       description: post.data.description,
       date: new Date(post.data.date),
     });
