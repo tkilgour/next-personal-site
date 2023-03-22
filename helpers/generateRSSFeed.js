@@ -11,7 +11,7 @@ export default async function generateRSSFeed() {
     description: "Thomas Kilgour's blog",
     id: site_url,
     link: site_url,
-    image: `${site_url}/favicon.svg`,
+    image: `${site_url}/logo.png`,
     favicon: `${site_url}/favicon.svg`,
     copyright: `All rights reserved ${new Date().getFullYear()}, Thomas Kilgour`,
     feedLinks: {
