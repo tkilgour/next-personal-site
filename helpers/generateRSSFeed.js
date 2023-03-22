@@ -29,7 +29,7 @@ export default async function generateRSSFeed() {
       title: post.data.title,
       id: `${site_url}/${post.slug}`,
       link: `${site_url}/${post.slug}`,
-      description: post.data.description,
+      description: post.content,
       date: new Date(post.data.date),
     });
   });
