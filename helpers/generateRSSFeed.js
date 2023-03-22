@@ -4,17 +4,16 @@ import getPosts from "./getPosts";
 
 export default async function generateRSSFeed() {
   const allPosts = await getPosts();
-  const site_url = "localhost:3000";
+  const site_url = "https://kilgour.co";
 
   const feedOptions = {
-    title: "Thomas Kilgour | RSS Feed",
-    description: "RSS Feed for Thomas Kilgour's blog",
+    title: "Thomas Kilgour",
+    description: "Thomas Kilgour's blog",
     id: site_url,
     link: site_url,
     image: `${site_url}/logo.png`,
     favicon: `${site_url}/favicon.svg`,
     copyright: `All rights reserved ${new Date().getFullYear()}, Thomas Kilgour`,
-    generator: "Feed for Node.js",
     feedLinks: {
       rss2: `${site_url}/rss.xml`,
       json: `${site_url}/feed.json`,

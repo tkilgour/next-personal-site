@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Thomas Kilgour | RSS Feed",
+    "home_page_url": "localhost:3000",
+    "feed_url": "localhost:3000/feed.json",
+    "description": "RSS Feed for Thomas Kilgour's blog",
+    "icon": "localhost:3000/logo.png",
+    "items": [
+        {
+            "id": "localhost:3000/blog/airpods",
+            "url": "localhost:3000/blog/airpods",
+            "title": "Controlling my Airpods from the comfort of my keyboard",
+            "summary": "How I set up a keyboard macro on my Keychron V6 that switches between noise cancellation and transparency modes.",
+            "date_modified": "2023-01-26T05:00:00.000Z"
+        },
+        {
+            "id": "localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind",
+            "url": "localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind",
+            "title": "Setting Up A Gridsome Project With Tailwind CSS",
+            "summary": "Setting up your Gridsome project with Tailwind CSS is extremely simple, thanks to gridsome-plugin-tailwindcss.",
+            "date_modified": "2019-03-29T04:00:00.000Z"
+        }
+    ]
+}

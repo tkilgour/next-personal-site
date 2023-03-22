@@ -4,7 +4,7 @@
         <title>Thomas Kilgour | RSS Feed</title>
         <link>localhost:3000</link>
         <description>RSS Feed for Thomas Kilgour's blog</description>
-        <lastBuildDate>Tue, 21 Mar 2023 20:51:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Mar 2023 21:05:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>localhost:3000/logo.png</url>
             <link>localhost:3000</link>
         </image>
-        <copyright>All rights reserved 2023, Ibas</copyright>
+        <copyright>All rights reserved 2023, Thomas Kilgour</copyright>
         <item>
             <title><![CDATA[Controlling my Airpods from the comfort of my keyboard]]></title>
             <link>localhost:3000/blog/airpods</link>

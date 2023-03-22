@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>localhost:3000</id>
+    <title>Thomas Kilgour | RSS Feed</title>
+    <updated>2023-03-21T21:05:02.857Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="localhost:3000"/>
+    <link rel="self" href="localhost:3000/atom.xml"/>
+    <subtitle>RSS Feed for Thomas Kilgour's blog</subtitle>
+    <logo>localhost:3000/logo.png</logo>
+    <icon>localhost:3000/favicon.svg</icon>
+    <rights>All rights reserved 2023, Thomas Kilgour</rights>
+    <entry>
+        <title type="html"><![CDATA[Controlling my Airpods from the comfort of my keyboard]]></title>
+        <id>localhost:3000/blog/airpods</id>
+        <link href="localhost:3000/blog/airpods"/>
+        <updated>2023-01-26T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How I set up a keyboard macro on my Keychron V6 that switches between noise cancellation and transparency modes.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Setting Up A Gridsome Project With Tailwind CSS]]></title>
+        <id>localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind</id>
+        <link href="localhost:3000/blog/setting-up-a-gridsome-project-with-tailwind"/>
+        <updated>2019-03-29T04:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Setting up your Gridsome project with Tailwind CSS is extremely simple, thanks to gridsome-plugin-tailwindcss.]]></summary>
+    </entry>
+</feed>
