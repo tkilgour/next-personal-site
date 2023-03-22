@@ -19,6 +19,7 @@ export default async function generateRSSFeed() {
       json: `${site_url}/feed.json`,
       atom: `${site_url}/atom.xml`,
     },
+    feed: `${site_url}/rss.xml`
   };
 
   const feed = new Feed(feedOptions);
