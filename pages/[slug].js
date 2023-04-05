@@ -2,13 +2,14 @@ import getPosts from "../helpers/getPosts";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import getPost from "../helpers/getPost";
+import formatDate from "../helpers/formatters";
 
 function Post({ data, content }) {
   console.log({ content })
   return (
     <article>
       <h1 className="mb-4 text-3xl sm:text-4xl leading-tight">{data.title}</h1>
-      <div className="mb-8 text-base">{data.date}</div>
+      <div className="mb-8 text-base">{formatDate(data.date)}</div>
       <div className="prose dark:prose-invert mt-12 text-lg">
         <MDXRemote {...content} />
       </div>

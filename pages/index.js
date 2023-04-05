@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 // import generateRSSFeed from "../helpers/generateRSSFeed";
 import getPosts from "../helpers/getPosts";
+import formatDate from "../helpers/formatters";
 
 export default function Home({ posts }) {
   return (
@@ -28,7 +29,7 @@ export default function Home({ posts }) {
                 {post.data.title}
               </Link>
             </h2>
-            <div className="text-sm mb-8">{post.data.date}</div>
+            <div className="text-sm mb-8">{formatDate(post.data.date)}</div>
             <p className="text-gray-500 dark:text-gray-400">
               {post.data.description}
             </p>
@@ -41,7 +42,9 @@ export default function Home({ posts }) {
 
 export const getStaticProps = () => {
   // generateRSSFeed();
-  const posts = getPosts();
+  const posts = getPosts().sort(
+    (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
+  );
 
   return {
     props: {
