@@ -1,0 +1,40 @@
+media:
+  input: public
+  output: /
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: posts
+    filename: "{fields.title}.mdx"
+    format: yaml-frontmatter
+    extension: mdx
+    view:
+      fields: [title, date, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: description
+        label: Description
+        type: text
+      - name: published
+        label: Published
+        type: boolean
+        default: false
+      - name: body
+        label: Body
+        type: rich-text
